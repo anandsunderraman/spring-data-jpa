@@ -4,6 +4,14 @@ This project was setup to be a playground to experiment with:
 1. spring-data-jpa
 2. Hibernate
 
+## Project Scenario
+1. There are 3 tables `user`, `user_department` and `user_address` (Not the ideal way to organize data)
+2. Use the `database.sql` to create the tables and insert the related data
+3. There is a one to one mapping between  `user` and `user_department`. 
+   The `user_id` column on  `user_department` references the `id` column on the `user` table.
+4. There is a one to one mapping between  `user` and `user_address`. 
+   The `user_id` column on  `user_address` references the `id` column on the `user` table.
+
 ## What was accomplished
 
 1. How to set establish `@OneToOne` relationship mapping between objects with lazy loading
